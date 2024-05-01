@@ -191,7 +191,37 @@ span{
         margin: 0 auto;
     }
 }
+/* WhatsApp Icon Styling */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
 
+/* WhatsApp Icon Color */
+.whatsapp-icon i {
+    color: green;
+    font-size: 2.5rem; /* Adjust as needed */
+    transition: color 0.3s;
+}
+
+/* WhatsApp Text Styling */
+.whatsapp-icon .whatsapp-text {
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    left: -50px; /* Adjust the left position as needed */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Show WhatsApp Text on Hover */
+.whatsapp-icon:hover .whatsapp-text {
+    display: block;
+}
 </style>
 	</head>
 
@@ -316,7 +346,7 @@ span{
 
 
 			<!-- SIMPLE NAVIGATION LINK -->
-			<li class="nl-simple" aria-haspopup="true"><a href="ehstrainings.html" class="h-link">EHS Trainings<span class="wsarrow"></span></a>
+			<li class="nl-simple" aria-haspopup="true"><a href="ehstrainings.html" class="h-link">MLC Trainings<span class="wsarrow"></span></a>
 			
 				<ul class="sub-menu">
 					<li aria-haspopup="true"><a href="online.html">Online </a></li>
@@ -375,24 +405,24 @@ span{
 
 
 
-<section class="about-us mt-5">
-	<div class="container" style="margin-left: 200px;">
-		<div class="row">
+	<section class="about-us mt-5">
+		<div class="container ml-lg-5">
+			<div class="row">
 			<div class="col-md-6 text">
-				<h2>About Us</h2>
-				<h5>Virtual Assistant at your Service,<br> All QEHS services at one place</h5>
-				<p>Skilled Administrative Support Professional with 23 Years' Experience in EHS .</p>
-				<div class="data">
-					<a href="contact.html" class="btn btn-primary hire">Connect with me!</a>
-				</div>
+			  <h2>About Us</h2>
+			  <h5>Virtual Assistant at your Service,<br> All QEHS services at one place</h5>
+			  <p>Skilled Administrative Support Professional with 23 Years' Experience in EHS .</p>
+			  <div class="data">
+				<a href="contact.html" class="btn btn-primary hire">Connect with me!</a>
+			  </div>
 			</div>
 			<div class="col-md-6 pic">
-				<img src="images/vindus_clients_images/client.png" class="img-fluid rounded-circle" alt="Client Image">
+			  <img src="images/vindus_clients_images/client.png" class="img-fluid rounded-circle" alt="Client Image">
 			</div>
+		  </div>
 		</div>
-	</div>
-</section>
-
+	  </section>
+	  
 <br>
 
 
@@ -465,7 +495,7 @@ span{
 <div class="row">
 
         <div class="col-md-6">
-        <p style="text-align: justify;">As on now a days implementing & maintaining QEHS is found very difficult due to many reasons such as Change in Standards & Laws frequently, Management not knowing the benefits in implementing EHS, Employers not having enough knowledge in EHS, Employees not having required knowledge in EHS, neglecting EHS for the sake of reaching targets by the middle management, Governing bodies not working up to the standards, Workforce not having sufficient knowledge in EHS... etc. So WWW.mahalakshmiconsultancy.COM is formed to enhance the EHS Profession by providing knowledge to EHS Professionals irrespective of experience to implement EHS in their respective industry.</p></div>
+        <p style="text-align: justify;">As on now a days implementing & maintaining QEHS is found very difficult due to many reasons such as Change in Standards & Laws frequently, Management not knowing the benefits in implementing EHS, Employers not having enough knowledge in EHS, Employees not having required knowledge in EHS, neglecting EHS for the sake of reaching targets by the middle management, Governing bodies not working up to the standards, Workforce not having sufficient knowledge in EHS... etc. So www.mlcqehs.com is formed to enhance the EHS Profession by providing knowledge to EHS Professionals irrespective of experience to implement EHS in their respective industry.</p></div>
 
         <div class="col-md-6">
             <img src="images/vindus_clients_images/website_logo_solid_background.png">
@@ -485,7 +515,14 @@ span{
 
 
 
-
+<!-- WhatsApp Icon -->
+<!-- WhatsApp Icon -->
+<div id="whatsapp-icon" class="whatsapp-icon">
+    <a href="https://api.whatsapp.com/send?phone=9949845759" target="_blank">
+<img src="images/vindus_clients_images/whate.png" alt="whatsapp"	>	
+ <span class="whatsapp-text">WhatsApp</span>
+    </a>
+</div>
 
 
 
@@ -495,39 +532,30 @@ span{
 
 
 
-			<!-- FOOTER-3
+<!-- FOOTER-3
 			============================================= -->
 			<footer id="footer-3" class="pt-100 footer">
 				<div class="container">
-
-
-					<!-- FOOTER CONTENT -->
 					<div class="row">
-
-
 						<!-- FOOTER LOGO -->
-						<div class="col-xl-3">
+						<div class="col-xl-3 text-center text-xl-left">
 							<div class="footer-info">
 								<img src="images/vindus_clients_images/cardlogo.jpg" alt="" class="rounded-circle" height="200px" width="200px">
-							</div>	
-						</div>	
-
-
+							</div>
+						</div>
+						<!-- END FOOTER LOGO -->
+				
 						<!-- FOOTER LINKS -->
 						<div class="col-sm-4 col-md-3 col-xl-2">
 							<div class="footer-links fl-1">
-							
 								<!-- Title -->
 								<h6 class="s-17 w-700" style="color:#fff;">Company</h6>
-
 								<!-- Links -->
 								<ul class="foo-links clearfix">
 									<li><p><a href="about.html">About Us</a></p></li>
-									
-									<li><p><a href="Blog.html">Our Blog</a></p></li>							
-									<li><p><a href="contact.html">Contact Us</a></p></li>			
+									<li><p><a href="Blog.html">Our Blog</a></p></li>                          
+									<li><p><a href="contact.html">Contact Us</a></p></li>           
 								</ul>
-
 							</div>
 						</div>	<!-- END FOOTER LINKS -->	
 
@@ -565,7 +593,7 @@ span{
 								<!-- Mail Link -->
 								<p class="footer-mail-link ico-25">
 									<a href="mailto:yourdomain@mail.com" style="color:#fff;">
-										<i class="fas fa-envelope"></i>  info@mlc.com ; contactmlconsultancy@gmail.com 
+										<i class="fas fa-envelope"></i>  info@mlcqehs.com
 
 									</a>
 									<br><br>
@@ -590,15 +618,16 @@ span{
 						<section class="mb-4">
 							<!-- Social media links -->
 							<!-- Facebook -->
-							<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+							<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/people/Ghanta-Bharat/pfbid02E5p4iNHonymCDq917efmb1mu44dTg8gLaJtYmWX1H4uo7ekoPVZ1UfoeGDbX8Ltml/" role="button"><i class="fab fa-facebook-f"></i></a>
 							<!-- Twitter -->
-							<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-							<!-- Google -->
-							<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
-							<!-- Instagram -->
-							<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+							<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="https://twitter.com/mlcqehs" role="button"><i class="fab fa-twitter"></i></a>
+<!-- youtube -->
+<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: red;" href="https://www.youtube.com/channel/UC0XU71NpgQlK-9K3lJU9vtQ" role="button"><i class="fab fa-youtube"></i></a>
+<!-- Instagram -->
+							<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/mlcqehsgb/" role="button"><i class="fab fa-instagram"></i></a>
 							<!-- Linkedin -->
-							<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+<!-- LinkedIn -->
+<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/company/maha-laxmi-consultancy/" role="button"><i class="fab fa-linkedin-in"></i></a>
 							<!-- Github -->
 						</section>
 						<!-- Section: Social media -->
